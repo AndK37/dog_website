@@ -11,7 +11,6 @@ window.addEventListener("scroll", (event) => {
 });
 let b = true;
 function side() {
-    console.log("on");
     if (b) {
         document.getElementById("side").style.display = "flex";
         b = !b;

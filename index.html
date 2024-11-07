@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мир собак</title>
-    <link rel="icon" type="image/x-icon" href="img/rb_3264.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-title.css">
+    <link rel="stylesheet" href="css/main-news.css">
+    <link rel="stylesheet" href="css/main-articles.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="js/main.js"></script>
 </head>
+
 <body>
     <header id="h" class="header header_a">
         <h1 class="header__title">Мир собак</h1>
@@ -23,11 +30,11 @@
             <input class="header__button" type="button" value="Войти">
         </div>
         <div class="ham">
-            <img id="m" src="img/menu_50dp_E8EAED_FILL0_wght400_GRAD0_opsz48.png" alt="" height="30px" onclick="side()">
+            <img id="m" src="img/ham.png" alt="" height="30px" onclick="side()">
         </div>
         <div id="side" class="side">
             <div class="ham-c">
-                <img id="c" src="img/close_50dp_E8EAED_FILL0_wght400_GRAD0_opsz48.png" alt="" height="30px" onclick="side()">
+                <img id="c" src="img/cross.png" alt="" height="30px" onclick="side()">
             </div>
             <nav class="side__nav">
                 <input class="header__button" type="button" value="Главная">
@@ -46,7 +53,7 @@
     <main>
         <div class="title">
             <div class="title__crop">
-                <img class="title__image" src="img/Dog_(128484081).jpeg" alt="">
+                <img class="title__image" src="img/titles/title.jpeg" alt="">
             </div>
             <div class="title__overlap">
                 <h1 class="title__text">Мир собак - сайт о собаках</h1>
@@ -54,131 +61,158 @@
         </div>
         <div class="about frame_center">
             <h1 class="about__title">О нас</h1>
-            <p class="about__text">Добро пожаловать на сайт о собаках! Здесь вы найдёте информацию обо всём, что связано с этими удивительными животными. Мы расскажем вам о разных породах собак, их характере, уходе и воспитании. Вы узнаете, как правильно выбрать щенка, как заботиться о нём и сделать его счастливым.<br><br>
-                                На нашем сайте вы найдёте статьи о здоровье собак, их питании, дрессировке и общении с другими животными. Мы будем рады поделиться с вами историями о ваших любимых питомцах и советами от опытных владельцев собак.<br><br>
-                                Присоединяйтесь к нам и узнайте всё о мире собак!</p>
+            <p class="about__text">Добро пожаловать на сайт о собаках! Здесь вы найдёте информацию обо всём, что связано
+                с этими удивительными животными. Мы расскажем вам о разных породах собак, их характере, уходе и
+                воспитании. Вы узнаете, как правильно выбрать щенка, как заботиться о нём и сделать его
+                счастливым.<br><br>
+                На нашем сайте вы найдёте статьи о здоровье собак, их питании, дрессировке и общении с другими
+                животными. Мы будем рады поделиться с вами историями о ваших любимых питомцах и советами от опытных
+                владельцев собак.<br><br>
+                Присоединяйтесь к нам и узнайте всё о мире собак!</p>
         </div>
         <div class="title">
             <div class="title__crop">
-                <img class="title__image" src="img/Canine-Fitness-Active-Dog-Month-FINAL.webp" alt="">
+                <img class="title__image" src="img/titles/news.jpg" alt="">
             </div>
             <div class="title__overlap">
                 <h1 class="title__text">Новости о собаках</h1>
             </div>
         </div>
         <div class="news frame_center">
-            <div class="news-top">
-                <div id="news1" class="news-item frame">
-                    <img src="img/sobaki-kolli-mnogo-ochki-solntse-stena-graffiti.jpg" alt="">
-                    <div class="news-item-mid">
-                        <h2>В Нижнем Новгороде прошёл фестиваль собак</h2>
-                        <span>В Нижнем Новгороде прошёл фестиваль собак, на котором были представлены более 500 питомцев разных пород. Фестиваль посетили тысячи зрителей, которые смогли пообщаться с собаками и узнать больше об их породах.</span>
+            <div class="news__list">
+                <div id="news1" class="news__item frame">
+                    <div class="news__image-wrapper">
+                        <img class="news__image" src="img/news/1.jpg" alt="">
                     </div>
-                    <div class="news-item-bot">
-                        <span>01.01.24</span>
-                        <a href="">Перейти-></a>
-                    </div>
-                </div>
-                <div id="news2" class="news-item frame">
-                    <img src="img/pacific-partnership-in-the-marshall-islands-cff465-1024.jpg" alt="">
-                    <div class="news-item-mid">
-                        <h2>В Москве стартовал проект «Собаки-волонтёры»</h2>
-                        <span>В Москве стартовал проект «Собаки-волонтёры», в рамках которого обученные собаки помогают людям с ограниченными возможностями здоровья. Проект направлен на социализацию и адаптацию людей с инвалидностью.</span>
-                    </div>
-                    <div class="news-item-bot">
-                        <span>01.01.24</span>
-                        <a href="">Перейти-></a>
+                    <h2 class="news__title">В Нижнем Новгороде прошёл фестиваль собак</h2>
+                    <span class="news__desc">В Нижнем Новгороде прошёл фестиваль собак, на котором были
+                        представлены более 500 питомцев
+                        разных пород. Фестиваль посетили тысячи зрителей, которые смогли пообщаться с собаками и узнать
+                        больше об их породах.</span>
+                    <div class="news__item-bot">
+                        <span class="news__date">01.01.24</span>
+                        <a class="news__link" href="">Перейти-></a>
                     </div>
                 </div>
-                <div id="news3" class="news-item frame">
-                    <img src="img/23085224895_fddcedbc9e_b.jpg" alt="">
-                    <div class="news-item-mid">
-                        <h2>В Санкт-Петербурге прошла выставка собак</h2>
-                        <span>В Санкт-Петербурге прошла выставка собак, на которой были представлены редкие и экзотические породы. Выставка привлекла внимание многих любителей собак, которые смогли познакомиться с новыми породами и узнать о них больше.</span>
+                <div id="news2" class="news__item frame">
+                    <div class="news__image-wrapper">
+                        <img class="news__image" src="img/news/2.jpg" alt="">
                     </div>
-                    <div class="news-item-bot">
-                        <span>01.01.24</span>
-                        <a href="">Перейти-></a>
+                    <h2 class="news__title">В Москве стартовал проект «Собаки-волонтёры»</h2>
+                    <span class="news__desc">В Москве стартовал проект «Собаки-волонтёры», в рамках которого
+                        обученные собаки помогают
+                        людям с ограниченными возможностями здоровья. Проект направлен на социализацию и адаптацию
+                        людей с инвалидностью.</span>
+                    <div class="news__item-bot">
+                        <span class="news__date">01.01.24</span>
+                        <a class="news__link" href="">Перейти-></a>
+                    </div>
+                </div>
+                <div id="news3" class="news__item frame">
+                    <div class="news__image-wrapper">
+                        <img class="news__image" src="img/news/3.jpg" alt="">
+                    </div>
+                    <h2 class="news__title">В Санкт-Петербурге прошла выставка собак</h2>
+                    <span class="news__desc">В Санкт-Петербурге прошла выставка собак, на которой были
+                        представлены редкие и
+                        экзотические породы. Выставка привлекла внимание многих любителей собак, которые смогли
+                        познакомиться с новыми породами и узнать о них больше.</span>
+                    <div class="news__item-bot">
+                        <span class="news__date">01.01.24</span>
+                        <a class="news__link" href="">Перейти-></a>
                     </div>
                 </div>
             </div>
-            <div class="news-bot">
-                <input type="button" value="Смотреть все новости ->">
+            <div class="news__bot">
+                <input class="news__button" type="button" value="Смотреть все новости ->">
             </div>
         </div>
         <div class="title">
             <div class="title__crop">
-                <img  class="title__image" src="img/dog-animal_HT4QMOFM1R.jpg" alt="">
+                <img class="title__image" src="img/titles/articles.webp" alt="">
             </div>
             <div class="title__overlap">
                 <h1 class="title__text">Статьи о собаках</h1>
             </div>
         </div>
         <div class="articles frame_center">
-            <div class="articles-top">
-                <div class="articles-item frame">
-                    <div class="articles-item-top">
-                        <img src="img/placeholder.jpg" alt="">
-                        <a href="">Cyber_Nomad</a>
-                        <span>01.01.24</span>
+            <div class="articles__list">
+                <div class="articles__item frame">
+                    <div class="articles__item-top">
+                        <img class="articles__avatar" src="img/placeholder.jpg" alt="">
+                        <a class="articles__user-link" href="">Cyber_Nomad</a>
+                        <span class="articles__date">01.01.24</span>
                     </div>
-                    <div class="articles-item-center">
-                        <h2>Собаки-терапевты: удивительные истории и польза для здоровья</h2>
-                        <span>В статье рассказывается о том, как собаки-терапевты помогают людям с различными заболеваниями, включая аутизм, депрессию и посттравматическое стрессовое расстройство. Также обсуждаются истории успеха и примеры того, как собаки-терапевты улучшают качество жизни своих хозяев.</span>
+                    <div class="articles__item-center">
+                        <h2 class="articles__title">Собаки-терапевты: удивительные истории и польза для здоровья</h2>
+                        <span class="articles__desc">В статье рассказывается о том, как собаки-терапевты помогают людям
+                            с различными
+                            заболеваниями, включая аутизм, депрессию и посттравматическое стрессовое расстройство. Также
+                            обсуждаются истории успеха и примеры того, как собаки-терапевты улучшают качество жизни
+                            своих хозяев.</span>
                     </div>
-                    <div class="articles-item-bot">
-                        <a href="">Перейти-></a>
-                    </div>
-                </div>
-                <div class="articles-item frame">
-                    <div class="articles-item-top">
-                        <img src="img/placeholder.jpg" alt="">
-                        <a href="">Thunder_Warrior</a>
-                        <span>01.01.24</span>
-                    </div>
-                    <div class="articles-item-center">
-                        <h2>Обучение собак различным командам: советы и рекомендации</h2>
-                        <span>Статья посвящена обучению собак различным командам, таким как «сидеть», «лежать», «апорт» и другим. В ней рассматриваются методы обучения, использование поощрений и наказаний, а также приводятся примеры упражнений для тренировки разных команд.</span>
-                    </div>
-                    <div class="articles-item-bot">
-                        <a href="">Перейти-></a>
+                    <div class="articles__item-bot">
+                        <a class="articles__link" href="">Перейти-></a>
                     </div>
                 </div>
-                <div class="articles-item frame">
-                    <div class="articles-item-top">
-                        <img src="img/placeholder.jpg" alt="">
-                        <a href="">Magic_Symphony</a>
-                        <span>01.01.24</span>
+                <div class="articles__item frame">
+                    <div class="articles__item-top">
+                        <img class="articles__avatar" src="img/placeholder.jpg" alt="">
+                        <a class="articles__user-link" href="">Thunder_Warrior</a>
+                        <span class="articles__date">01.01.24</span>
                     </div>
-                    <div class="articles-item-center">
-                        <h2>Как выбрать подходящую породу собаки для семьи</h2>
-                        <span>В статье рассказывается о том, как выбрать породу собаки, которая подойдёт конкретной семье. Учитываются такие факторы, как размер собаки, её характер, уровень активности и потребности в уходе. Также приводятся примеры популярных пород собак, которые хорошо подходят для семейной жизни.</span>
+                    <div class="articles__item-center">
+                        <h2 class="articles__title">Обучение собак различным командам: советы и рекомендации</h2>
+                        <span class="articles__desc">Статья посвящена обучению собак различным командам, таким как
+                            «сидеть», «лежать», «апорт»
+                            и другим. В ней рассматриваются методы обучения, использование поощрений и наказаний, а
+                            также приводятся примеры упражнений для тренировки разных команд.</span>
                     </div>
-                    <div class="articles-item-bot">
-                        <a href="">Перейти-></a>
+                    <div class="articles__item-bot">
+                        <a class="articles__link" href="">Перейти-></a>
+                    </div>
+                </div>
+                <div class="articles__item frame">
+                    <div class="articles__item-top">
+                        <img class="articles__avatar" src="img/placeholder.jpg" alt="">
+                        <a class="articles__user-link" href="">Magic_Symphony</a>
+                        <span class="articles__date">01.01.24</span>
+                    </div>
+                    <div class="articles__item-center">
+                        <h2 class="articles__title" 2>Как выбрать подходящую породу собаки для семьи</h2>
+                            <span class="articles__desc">В статье рассказывается о том, как выбрать породу собаки,
+                                которая подойдёт конкретной
+                                семье. Учитываются такие факторы, как размер собаки, её характер, уровень активности и
+                                потребности в уходе. Также приводятся примеры популярных пород собак, которые хорошо
+                                подходят для семейной жизни.</span>
+                    </div>
+                    <div class="articles__item-bot">
+                        <a class="articles__link" href="">Перейти-></a>
                     </div>
                 </div>
             </div>
-            <div class="articles-bot">
-                <input type="button" value="Смотреть все статьи ->">
+            <div class="articles__bot">
+                <input class="articles__button" type="button" value="Смотреть все статьи ->">
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer-left">
-            <span>
+    <footer class="footer">
+        <div class="footer__left">
+            <span class="footer__title">Контакты</span>
+            <span class="footer__contacts">
                 Телефон: +7(999)999-999<br>
                 Почта: email@mail.com
             </span>
         </div>
-        <div class="footer-right">
-            <span>Соц. сети</span>
-            <div class="footer-rigth-icons">
-                <img src="img/yt.png" alt="">
-                <img src="img/whatsapp.png" alt="">
-                <img src="img/vk.png" alt="">
+        <div class="footer__right">
+            <span class="footer__title">Соц. сети</span>
+            <div class="footer__icon-list">
+                <img class="footer__icon" src="img/socials/yt.png" alt="">
+                <img class="footer__icon" src="img/socials/whatsapp.png" alt="">
+                <img class="footer__icon" src="img/socials/vk.png" alt="">
             </div>
         </div>
     </footer>
 </body>
+
 </html>
