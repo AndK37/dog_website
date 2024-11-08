@@ -19,11 +19,11 @@
     <header id="h" class="header header_a">
         <h1 class="header__title">Мир собак</h1>
         <nav class="header__nav">
-            <input class="header__button" type="button" value="Главная">
-            <input class="header__button" type="button" value="Статьи">
-            <input class="header__button" type="button" value="Форум">
-            <input class="header__button" type="button" value="Породы собак">
-            <input class="header__button" type="button" value="Аксессуары для собак">
+            <button class="header__button">Главная</button>
+            <button class="header__button" onclick="location.href='pages/articles-list.html'">Статьи</button>
+            <button class="header__button">Форум</button>
+            <button class="header__button">Породы собак</button>
+            <button class="header__button">Аксессуары для собак</button>
         </nav>
         <div class="header__auth">
             <a class="header__link" href="">Регистрация</a>
@@ -37,11 +37,11 @@
                 <img id="c" src="img/cross.png" alt="" height="30px" onclick="side()">
             </div>
             <nav class="side__nav">
-                <input class="header__button" type="button" value="Главная">
-                <input class="header__button" type="button" value="Статьи">
-                <input class="header__button" type="button" value="Форум">
-                <input class="header__button" type="button" value="Породы собак">
-                <input class="header__button" type="button" value="Аксессуары для собак">
+                <button class="header__button">Главная</button>
+                <button class="header__button" onclick="location.href='pages/articles-list.html'">Статьи</button>
+                <button class="header__button">Форум</button>
+                <button class="header__button">Породы собак</button>
+                <button class="header__button">Аксессуары для собак</button>
             </nav>
             <div class="side__auth">
                 <a class="header__link" href="">Регистрация</a>
@@ -59,7 +59,7 @@
                 <h1 class="title__text">Мир собак - сайт о собаках</h1>
             </div>
         </div>
-        <div class="about frame_center">
+        <div class="about frame center">
             <h1 class="about__title">О нас</h1>
             <p class="about__text">Добро пожаловать на сайт о собаках! Здесь вы найдёте информацию обо всём, что связано
                 с этими удивительными животными. Мы расскажем вам о разных породах собак, их характере, уходе и
@@ -78,7 +78,7 @@
                 <h1 class="title__text">Новости о собаках</h1>
             </div>
         </div>
-        <div class="news frame_center">
+        <div class="news frame center">
             <div class="news__list">
                 <div id="news1" class="news__item frame">
                     <div class="news__image-wrapper">
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="news__bot">
-                <input class="news__button" type="button" value="Смотреть все новости ->">
+                <button class="news__button" onclick="location.href='index.html'">Смотреть все новости -></button>
             </div>
         </div>
         <div class="title">
@@ -135,7 +135,7 @@
                 <h1 class="title__text">Статьи о собаках</h1>
             </div>
         </div>
-        <div class="articles frame_center">
+        <div class="articles frame center">
             <div class="articles__list">
                 <div class="articles__item frame">
                     <div class="articles__item-top">
@@ -192,7 +192,7 @@
                 </div>
             </div>
             <div class="articles__bot">
-                <input class="articles__button" type="button" value="Смотреть все статьи ->">
+                <button class="articles__button" onclick="location.href='pages/articles-list.html'">Смотреть все статьи -></button>
             </div>
         </div>
     </main>
