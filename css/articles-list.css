@@ -17,9 +17,8 @@ body {
 /* main */
 main {
     background-color: #FBFBFB;
-    padding-bottom: 10px;
-    padding-top: 10px;
     flex: 1;
+    padding-bottom: 40px;
 }
 
 .frame {
@@ -35,69 +34,25 @@ main {
     margin-bottom: 10px;
 }
 
-.ham {
-    display: none;
-}
-
-.ham #m,
-.ham #c {
-    display: none;
-}
-
-.side {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: #202020;
-    display: none;
-    flex-direction: column;
-
-}
-
-.ham-c {
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding-right: 10px;
-}
-
-.side__nav {
+.articles-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
+
 }
 
-.side__auth {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.articles__pages {
+    font-size: 24px;
+    font-weight: bold;
     align-self: center;
-
-
 }
 
-@media (max-width: 1200px) {
-    .header__nav {
-        display: none;
-    }
-
-    .header__auth {
-        display: none;
-    }
-
-    .header {
-        justify-content: space-between;
-        opacity: 1;
-    }
-
-    .ham {
-        display: block;
-    }
-
-    .ham #m {
-        display: block;
-    }
+.articles-list__bot {
+    display: flex;
+    justify-content: space-between;
 }
+
+.hidden {
+    visibility: hidden;
+}
+

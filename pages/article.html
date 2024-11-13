@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
+    <title>Список статей</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+</head>
+
+<body>
+    <header id="h" class="header header_a">
+        <h1 class="header__title">Мир собак</h1>
+        <nav class="header__nav">
+            <button class="header__button">Главная</button>
+            <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
+            <button class="header__button">Форум</button>
+            <button class="header__button">Породы собак</button>
+            <button class="header__button">Аксессуары для собак</button>
+        </nav>
+        <div class="header__auth">
+            <a class="header__link" href="">Регистрация</a>
+            <input class="header__button" type="button" value="Войти">
+        </div>
+        <div class="ham">
+            <img id="m" src="../img/ham.png" alt="" height="30px" onclick="side()">
+        </div>
+        <div id="side" class="side">
+            <div class="ham-c">
+                <img id="c" src="../img/cross.png" alt="" height="30px" onclick="side()">
+            </div>
+            <nav class="side__nav">
+                <button class="header__button">Главная</button>
+                <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
+                <button class="header__button">Форум</button>
+                <button class="header__button">Породы собак</button>
+                <button class="header__button">Аксессуары для собак</button>
+            </nav>
+            <div class="side__auth">
+                <a class="header__link" href="">Регистрация</a>
+                <input class="header__button" type="button" value="Войти">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="article frame center">
+            <h1>Собаки-терапевты: удивительные истории и польза для здоровья</h1>
+            <p>
+                Собаки-терапевты — это специально обученные животные, которые помогают людям справляться с различными
+                заболеваниями и состояниями. Канистерапия основана на принципе общения и взаимодействия между человеком
+                и собакой, что оказывает положительное влияние на физическое и эмоциональное состояние пациента.
+            </p>
+            <h2>История канистерапии</h2>
+            <p>
+                Зародилась канистерапия ещё в Древнем Египте и Древней Греции, где животных использовали для лечения
+                различных недугов. Однако серьёзные исследования особенностей воздействия собак на психику людей
+                начались только в 60-х годах XX века. Американский детский психиатр Борис Левинсон заметил, что во время
+                работы со сложными пациентами наиболее яркий положительный эффект от сеанса наблюдался тогда, когда на
+                встрече присутствовала собака.
+            </p>
+            <h2>Как выбирают собак-терапевтов</h2>
+            <p>
+                Будущих собак-терапевтов отбирают ещё щенками, обращая внимание на смелость, смышлёность и желание
+                взаимодействовать с людьми. Окончательно сказать, что из щенка получился настоящий терапевт, можно
+                только после успешного завершения стажировки. Обычно из десяти отобранных щенков в лучшем случае один
+                начинает работу.
+            </p>
+            <h2>Подготовка собак-терапевтов</h2>
+            <p>
+                Щенок начинает проходить подготовку с момента приобретения у заводчика. Сначала он проходит базовое
+                послушание, учится быть контактным и послушным. Затем подросшие щенки проходят базовую подготовку,
+                осваивают курс дрессировки, основы фристайла и трюковой подготовки. Первое время будущие
+                собаки-терапевты просто присутствуют на занятиях, привыкая к виду, голосу и запаху, затем постепенно
+                вводятся в занятия. Раз от раза время работы собаки увеличивается, усложняются условия. Весь процесс
+                подготовки занимает от полугода до года.
+            </p>
+            <h2>Применение собак-терапевтов</h2>
+            <p>
+                Канистерапия успешно применяется для лечения таких серьёзных заболеваний, как ДЦП, синдром Дауна,
+                аутизм, а также при различных психических и психологических нарушениях. Собаки-терапевты становятся
+                настоящими друзьями и помощниками для своих пациентов, помогая им преодолевать трудности и улучшая
+                качество их жизни.
+            </p>
+        </div>
+        <div class="comments frame center">
+            <h1>Комментарии</h1>
+            <div class="comments__form">
+                <div>
+                    <textarea  class="comments__input" name="" id=""></textarea>
+                </div>
+                <div style="align-self: flex-end;">
+                    <button class="comments__button">Отправить</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__left">
+            <span class="footer__title">Контакты</span>
+            <span class="footer__contacts">
+                Телефон: +7(999)999-999<br>
+                Почта: email@mail.com
+            </span>
+        </div>
+        <div class="footer__right">
+            <span class="footer__title">Соц. сети</span>
+            <div class="footer__icon-list">
+                <img class="footer__icon" src="../img/socials/yt.png" alt="">
+                <img class="footer__icon" src="../img/socials/whatsapp.png" alt="">
+                <img class="footer__icon" src="../img/socials/vk.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

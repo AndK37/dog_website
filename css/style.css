@@ -8,8 +8,6 @@ body {
 }
 
 body {
-
-
     background-color: #202020;
 }
 
@@ -17,6 +15,7 @@ body {
 main {
     background-color: #FBFBFB;
     padding-bottom: 10px;
+    flex: 1;
 }
 
 .frame {
