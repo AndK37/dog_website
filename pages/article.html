@@ -17,7 +17,7 @@
     <header id="h" class="header header_a">
         <h1 class="header__title">Мир собак</h1>
         <nav class="header__nav">
-            <button class="header__button">Главная</button>
+            <button class="header__button" onclick="location.href='../index.html'">Главная</button>
             <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
             <button class="header__button">Форум</button>
             <button class="header__button">Породы собак</button>
@@ -48,6 +48,11 @@
         </div>
     </header>
     <main>
+        <div class="article-head frame center">
+            <img class="article-head__avatar" src="../img/placeholder.jpg" alt="">
+            <a class="article-head__user-link" href="">Cyber_Nomad</a>
+            <span class="article-head__date">01.01.24</span>
+        </div>
         <div class="article frame center">
             <h1>Собаки-терапевты: удивительные истории и польза для здоровья</h1>
             <p>
@@ -87,16 +92,23 @@
                 качество их жизни.
             </p>
         </div>
+        <div class="rating frame center">
+            <img class="rating__upvote rating__image" src="../img/arrow.png" alt="">
+            <span class="rating__score">0</span>
+            <img class="rating__downvote rating__image" src="../img/arrow.png" alt="">
+        </div>
         <div class="comments frame center">
             <h1>Комментарии</h1>
             <div class="comments__form">
-                <div>
+                <div style="display: flex;">
                     <textarea  class="comments__input" name="" id=""></textarea>
                 </div>
                 <div style="align-self: flex-end;">
                     <button class="comments__button">Отправить</button>
                 </div>
-
+                <div class="comment">
+                    
+                </div>
             </div>
 
         </div>

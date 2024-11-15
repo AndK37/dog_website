@@ -94,8 +94,6 @@
 
 }
 
-
-
 @media (max-width: 1200px) {
     .header__nav {
         display: none;
@@ -116,20 +114,5 @@
 
     .ham #m {
         display: block;
-    }
-}
-
-@media (max-width: 1200px) {
-    .header__nav {
-        display: none;
-    }
-
-    .header__auth {
-        display: none;
-    }
-
-    .header {
-        justify-content: space-between;
-        opacity: 1;
     }
 }

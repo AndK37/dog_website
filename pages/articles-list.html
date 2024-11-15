@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/main-articles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/main.js"></script>
     <title>Список статей</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
@@ -17,7 +18,7 @@
     <header id="h" class="header header_a">
         <h1 class="header__title">Мир собак</h1>
         <nav class="header__nav">
-            <button class="header__button">Главная</button>
+            <button class="header__button" onclick="location.href='../index.html'">Главная</button>
             <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
             <button class="header__button">Форум</button>
             <button class="header__button">Породы собак</button>
@@ -48,8 +49,8 @@
         </div>
     </header>
     <main>
-        <div class="articles-list frame center" style="display: flex; height: 100%; justify-content: space-between;">
-            <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 15px;">
+        <div class="articles-list frame center">
+            <div class="articles-list__top">
                 <div class="articles__item frame">
                     <div class="articles__item-top">
                         <img class="articles__avatar" src="../img/placeholder.jpg" alt="">
@@ -71,16 +72,33 @@
                 <div class="articles__item frame">
                     <div class="articles__item-top">
                         <img class="articles__avatar" src="../img/placeholder.jpg" alt="">
-                        <a class="articles__user-link" href="">Cyber_Nomad</a>
+                        <a class="articles__user-link" href="">Thunder_Warrior</a>
                         <span class="articles__date">01.01.24</span>
                     </div>
                     <div class="articles__item-center">
-                        <h2 class="articles__title">Собаки-терапевты: удивительные истории и польза для здоровья</h2>
-                        <span class="articles__desc">В статье рассказывается о том, как собаки-терапевты помогают людям
-                            с различными
-                            заболеваниями, включая аутизм, депрессию и посттравматическое стрессовое расстройство. Также
-                            обсуждаются истории успеха и примеры того, как собаки-терапевты улучшают качество жизни
-                            своих хозяев.</span>
+                        <h2 class="articles__title">Обучение собак различным командам: советы и рекомендации</h2>
+                        <span class="articles__desc">Статья посвящена обучению собак различным командам, таким как
+                            «сидеть», «лежать», «апорт»
+                            и другим. В ней рассматриваются методы обучения, использование поощрений и наказаний, а
+                            также приводятся примеры упражнений для тренировки разных команд.</span>
+                    </div>
+                    <div class="articles__item-bot">
+                        <a class="articles__link" href="">Перейти-></a>
+                    </div>
+                </div>
+                <div class="articles__item frame">
+                    <div class="articles__item-top">
+                        <img class="articles__avatar" src="../img/placeholder.jpg" alt="">
+                        <a class="articles__user-link" href="">Magic_Symphony</a>
+                        <span class="articles__date">01.01.24</span>
+                    </div>
+                    <div class="articles__item-center">
+                        <h2 class="articles__title">Как выбрать подходящую породу собаки для семьи</h2>
+                        <span class="articles__desc">В статье рассказывается о том, как выбрать породу собаки,
+                            которая подойдёт конкретной
+                            семье. Учитываются такие факторы, как размер собаки, её характер, уровень активности и
+                            потребности в уходе. Также приводятся примеры популярных пород собак, которые хорошо
+                            подходят для семейной жизни.</span>
                     </div>
                     <div class="articles__item-bot">
                         <a class="articles__link" href="">Перейти-></a>
@@ -93,12 +111,11 @@
                         <span class="articles__date">01.01.24</span>
                     </div>
                     <div class="articles__item-center">
-                        <h2 class="articles__title">Собаки-терапевты: удивительные истории и польза для здоровья</h2>
-                        <span class="articles__desc">В статье рассказывается о том, как собаки-терапевты помогают людям
-                            с различными
-                            заболеваниями, включая аутизм, депрессию и посттравматическое стрессовое расстройство. Также
-                            обсуждаются истории успеха и примеры того, как собаки-терапевты улучшают качество жизни
-                            своих хозяев.</span>
+                        <h2 class="articles__title">Эмоциональная связь между человеком и собакой</h2>
+                        <span class="articles__desc">Собаки — удивительные создания, способные понимать и выражать
+                            эмоции человека. Эта уникальная способность была описана Чарльзом Дарвином и позволяет
+                            питомцам подстраиваться под настроение хозяина. Собаки чувствуют радость и счастье, когда
+                            видят улыбающиеся лица, и могут испытывать грусть и скуку при виде суровых лиц.</span>
                     </div>
                     <div class="articles__item-bot">
                         <a class="articles__link" href="">Перейти-></a>
@@ -107,34 +124,12 @@
                 <div class="articles__item frame">
                     <div class="articles__item-top">
                         <img class="articles__avatar" src="../img/placeholder.jpg" alt="">
-                        <a class="articles__user-link" href="">Cyber_Nomad</a>
+                        <a class="articles__user-link" href="">Thunder_Warrior</a>
                         <span class="articles__date">01.01.24</span>
                     </div>
                     <div class="articles__item-center">
-                        <h2 class="articles__title">Собаки-терапевты: удивительные истории и польза для здоровья</h2>
-                        <span class="articles__desc">В статье рассказывается о том, как собаки-терапевты помогают людям
-                            с различными
-                            заболеваниями, включая аутизм, депрессию и посттравматическое стрессовое расстройство. Также
-                            обсуждаются истории успеха и примеры того, как собаки-терапевты улучшают качество жизни
-                            своих хозяев.</span>
-                    </div>
-                    <div class="articles__item-bot">
-                        <a class="articles__link" href="">Перейти-></a>
-                    </div>
-                </div>
-                <div class="articles__item frame">
-                    <div class="articles__item-top">
-                        <img class="articles__avatar" src="../img/placeholder.jpg" alt="">
-                        <a class="articles__user-link" href="">Cyber_Nomad</a>
-                        <span class="articles__date">01.01.24</span>
-                    </div>
-                    <div class="articles__item-center">
-                        <h2 class="articles__title">Собаки-терапевты: удивительные истории и польза для здоровья</h2>
-                        <span class="articles__desc">В статье рассказывается о том, как собаки-терапевты помогают людям
-                            с различными
-                            заболеваниями, включая аутизм, депрессию и посттравматическое стрессовое расстройство. Также
-                            обсуждаются истории успеха и примеры того, как собаки-терапевты улучшают качество жизни
-                            своих хозяев.</span>
+                        <h2 class="articles__title">Общительность и интеллект собак</h2>
+                        <span class="articles__desc">Собаки обладают долговременной памятью и могут помнить приятные события из прошлого. Они способны налаживать контакт с другими животными и помогать им адаптироваться к новым условиям.</span>
                     </div>
                     <div class="articles__item-bot">
                         <a class="articles__link" href="">Перейти-></a>
@@ -144,8 +139,8 @@
 
             <div class="articles-list__bot">
                 <button class="articles__button hidden" onclick="location.href=''"><- Пред. страница</button>
-                <span class="articles__pages">1/10</span>
-                <button class="articles__button" onclick="location.href=''">След. страница -></button>
+                        <span class="articles__pages">1/10</span>
+                        <button class="articles__button" onclick="location.href=''">След. страница -></button>
             </div>
         </div>
     </main>

@@ -1,20 +1,6 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #EEEEEE;
-    height: 100%;
-}
-
-body {
-    background-color: #202020;
-    display: flex;
-    flex-direction: column;
-
-}
 h1 {
     font-size: 2rem;
+    text-align: center;
 }
 h2 {
     font-size: 1.75rem;
@@ -22,6 +8,53 @@ h2 {
 }
 p {
     font-size: 1.5rem;
+}
+
+.article-head {
+    display: flex;
+    align-items: center;
+}
+
+.article-head__avatar {
+    width: 25px;
+    border-radius: 10px;
+}
+
+.article-head__user-link {
+    text-decoration: none;
+    color: #025E73;
+    margin-left: 10px;
+}
+
+.article-head__date {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating__image {
+    width: 48px;
+}
+
+.rating__downvote {
+    rotate: 90deg;
+}
+
+.rating__upvote {
+    rotate: -90deg;
+}
+
+.rating__score {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.comment {
+    border-top: #444444 solid 3px;
 }
 
 .comments {
@@ -36,9 +69,13 @@ p {
 }
 .comments__input {
     font-size: 1rem;
-    width: 75%;
+    width: 90%;
     height: 10vh;
+    resize: none;
+    margin: 5px;
+    align-self: center;
 }
+
 .comments__button {
     background-color: #FBFBFB;
     color: #202020;
