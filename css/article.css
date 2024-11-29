@@ -66,8 +66,8 @@ p {
 }
 
 .comment {
-    border-top: #444444 solid 3px;
-    padding: 5px;
+    padding-left: 10px;
+    border-left: #808080 solid 2px;
 }
 
 .comment__date {
@@ -86,6 +86,10 @@ p {
 
 .comment__bot {}
 
+.sub-comment {
+    margin-left: 30px;
+}
+
 .comment__text {
     font-size: 20px;
 }
@@ -93,7 +97,7 @@ p {
 .comments {
     display: flex;
     flex-direction: column;
-
+    gap: 5px;
 }
 
 .comments__form {
@@ -120,6 +124,7 @@ p {
     padding: 5px;
     transition-duration: 0.3s;
     cursor: pointer;
+    padding: 8px;
 }
 
 .comments__button:hover {

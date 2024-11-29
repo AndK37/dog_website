@@ -59,6 +59,7 @@
     padding: 5px;
     transition-duration: 0.3s;
     cursor: pointer;
+    padding: 8px;
 }
 
 .news__button:hover {

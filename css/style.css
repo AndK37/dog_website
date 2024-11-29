@@ -73,11 +73,12 @@ main {
     flex-direction: row;
     align-items: center;
     align-self: center;
-
-
 }
 
-
+.side__nav .header__button {
+    width: 90%;
+    margin: 10px;
+}
 
 @media (max-width: 1200px) {
     .header__nav {
