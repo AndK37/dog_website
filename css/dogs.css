@@ -1,0 +1,54 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: space-evenly;
+}
+
+.list__item {
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+    width: 350px;
+
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    align-content: center;
+
+    cursor: pointer;
+    box-shadow: 0 0 5px;
+
+    transition: width 0.3s;
+
+}
+
+.list__item:hover {
+    width: 400px;
+    background-image: url("../img/dogs/1.jpg");
+}
+
+
+#d1 {
+    background-image: url("../img/dogs/1.jpg");
+}
+
+#d2 {
+    background-image: url("../img/dogs/2.jpg");
+}
+
+#d3 {
+    background-image: url("../img/dogs/3.jpg");
+}
+
+#d4 {
+    background-image: url("../img/dogs/4.jpg");
+}
+
+#d5 {
+    background-image: url("../img/dogs/5.jpg");
+}
+
+#d6 {
+    background-image: url("../img/dogs/6.jpg");
+}

@@ -43,7 +43,7 @@
                 <button class="header__button">Главная</button>
                 <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
                 <button class="header__button">Форум</button>
-                <button class="header__button">Породы собак</button>
+                <button class="header__button" onclick="location.href='dogs.html'">Породы собак</button>
                 <button class="header__button">Аксессуары для собак</button>
             </nav>
             <div class="side__auth">
@@ -53,7 +53,20 @@
         </div>
     </header>
     <main>
-        <div class="articles-list frame center">
+        <div class="search frame">
+            <h1 class="search__title">Поиск</h1>
+            <input class="search__input" type="text" name="" id="" placeholder="Поиск...">
+            <div>
+                <input type="checkbox" name="tag" id="tag" checked>
+                <label for="tab">Новости</label>
+            </div>
+            <div>
+                <input type="checkbox" name="tag" id="tag" checked>
+                <label for="tab">Статьи</label>
+            </div>
+            <button class="articles__button">Поиск</button>
+        </div>
+        <div class="articles-list frame">
             <div class="articles-list__top">
                 <div class="articles__item frame">
                     <div class="articles__item-top">
@@ -133,7 +146,9 @@
                     </div>
                     <div class="articles__item-center">
                         <h2 class="articles__title">Общительность и интеллект собак</h2>
-                        <span class="articles__desc">Собаки обладают долговременной памятью и могут помнить приятные события из прошлого. Они способны налаживать контакт с другими животными и помогать им адаптироваться к новым условиям.</span>
+                        <span class="articles__desc">Собаки обладают долговременной памятью и могут помнить приятные
+                            события из прошлого. Они способны налаживать контакт с другими животными и помогать им
+                            адаптироваться к новым условиям.</span>
                     </div>
                     <div class="articles__item-bot">
                         <a class="articles__link" href="">Перейти-></a>
@@ -152,7 +167,7 @@
         <div class="footer__left">
             <span class="footer__title">Контакты</span>
             <span class="footer__contacts">
-                Телефон: +7(999)999-999<br>
+                Телефон: +7 (999) 999-999<br>
                 Почта: email@mail.com
             </span>
         </div>

@@ -28,3 +28,39 @@
 .hidden {
     visibility: hidden;
 }
+
+.search {
+    height: fit-content;
+    min-width: 300px;
+}
+.search * {
+    margin-bottom: 5px;
+}
+
+.search__title {
+    text-align: center;
+}
+.search__input {
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 5px;
+    width: 100%;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 10px;
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+}
