@@ -1,0 +1,38 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.list-item {
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+}
+
+.list-item img {
+    max-height: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.frame {
+    padding: 0;
+}
+
+.list-item h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.a-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    .list-item img {
+        display: none;
+    }
+}

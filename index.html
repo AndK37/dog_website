@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/main-news.css">
     <link rel="stylesheet" href="css/main-articles.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -25,13 +24,13 @@
         <nav class="header__nav">
             <button class="header__button">Главная</button>
             <button class="header__button" onclick="location.href='pages/articles-list.html'">Статьи</button>
-            <button class="header__button">Форум</button>
+            <button class="header__button" onclick="location.href='pages/forum.html'">Форум</button>
             <button class="header__button" onclick="location.href='pages/dogs.html'">Породы собак</button>
-            <button class="header__button">Аксессуары для собак</button>
+            <button class="header__button" onclick="location.href='pages/accessories.html'">Аксессуары для собак</button>
         </nav>
         <div class="header__auth">
-            <a class="header__link" href="">Регистрация</a>
-            <input class="header__button" type="button" value="Войти">
+            <a id="reg-link" class="header__link">Регистрация</a>
+            <input id="login-btn" class="header__button" type="button" value="Войти">
         </div>
         <div class="ham">
             <img id="m" src="img/ham.png" alt="" height="30px" onclick="side()">
@@ -43,17 +42,40 @@
             <nav class="side__nav">
                 <button class="header__button">Главная</button>
                 <button class="header__button" onclick="location.href='pages/articles-list.html'">Статьи</button>
-                <button class="header__button">Форум</button>
-                <button class="header__button">Породы собак</button>
-                <button class="header__button">Аксессуары для собак</button>
+                <button class="header__button" onclick="location.href='pages/forum.html'">Форум</button>
+                <button class="header__button" onclick="location.href='pages/dogs.html'">Породы собак</button>
+                <button class="header__button" onclick="location.href='pages/accessories.html'">Аксессуары для собак</button>
             </nav>
             <div class="side__auth">
-                <a class="header__link" href="">Регистрация</a>
-                <input class="header__button" type="button" value="Войти">
+                <a id="reg-link" class="header__link">Регистрация</a>
+                <input id="side-login-btn" class="header__button" type="button" value="Войти">
             </div>
         </div>
     </header>
-
+    <dialog id="d-reg" class="modal frame">
+        <form method="dialog">
+            <button id="modal-close" class="modal__close">X</button>
+            <h1>Регистрация</h1>
+            <h2>Почта</h2>
+            <input type="email" name="" id="">
+            <h2>Логин</h2>
+            <input type="text">
+            <h2>Пароль</h2>
+            <input type="password" name="" id="">
+            <button class="articles__button">Зарегистрироваться</button>
+        </form>
+    </dialog>
+    <dialog id="d-log" class="modal frame">
+        <form method="dialog">
+            <button id="modal-close" class="modal__close">X</button>
+            <h1>Вход</h1>
+            <h2>Логин</h2>
+            <input type="text">
+            <h2>Пароль</h2>
+            <input type="password" name="" id="">
+            <button class="articles__button">Войти</button>
+        </form>
+    </dialog>
     <main>
         <div class="title">
             <div class="title__crop">
@@ -217,6 +239,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

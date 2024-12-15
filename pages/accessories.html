@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>AAAAAAAAAAAAAAAAAAAAAAAAA</title>
+    <link rel="stylesheet" href="../css/accessories.css">
+    <title>Аксессуары</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 </head>
 
@@ -49,7 +50,7 @@
             </div>
         </div>
     </header>
-    <dialog id="d-reg" class="modal frame">
+    <dialog id="d-reg" class="modal frame"style="padding: 10px;">
         <form method="dialog">
             <button id="modal-close" class="modal__close">X</button>
             <h1>Регистрация</h1>
@@ -59,10 +60,10 @@
             <input type="text">
             <h2>Пароль</h2>
             <input type="password" name="" id="">
-            <button class="articles__button" style="margin-top: 10px;">Зарегистрироваться</button>
+            <button class="button" style="margin-top: 10px;">Зарегистрироваться</button>
         </form>
     </dialog>
-    <dialog id="d-log" class="modal frame">
+    <dialog id="d-log" class="modal frame"style="padding: 10px;">
         <form method="dialog">
             <button id="modal-close" class="modal__close">X</button>
             <h1>Вход</h1>
@@ -70,10 +71,59 @@
             <input type="text">
             <h2>Пароль</h2>
             <input type="password" name="" id="">
-            <button class="articles__button" style="margin-top: 10px;">Войти</button>
+            <button class="button" style="margin-top: 10px;">Войти</button>
         </form>
     </dialog>
     <main>
+        <div class="frame center" style="padding: 10px;">
+            <div class="list">
+                <div class="list-item frame">
+                    <img src="../img/accessories/1.png" alt="">
+                    <div class="a-desc">
+                        <h2>Ошейник с GPS-трекером</h2>
+                        <span>Описание: Этот ошейник оснащен встроенным GPS-модулем, который позволяет отслеживать
+                            местоположение собаки через специальное приложение на смартфоне.</span>
+                        <span>Оценка: ★★★★☆</span>
+                    </div>
+                </div>
+                <div class="list-item frame"> <img src="../img/accessories/2.png" alt="">
+                    <div class="a-desc">
+                        <h2>Миска для воды с фильтром</h2>
+                        <span>Описание: Автоматическая поилка с фильтрующим элементом обеспечивает постоянное наличие
+                            чистой питьевой воды для вашего питомца.</span>
+                        <span>Оценка: ★★★★★</span>
+                    </div>
+                </div>
+                <div class="list-item frame"> <img src="../img/accessories/3.png" alt="">
+                    <div class="a-desc">
+                        <h2>Светоотражающий поводок</h2>
+                        <span>Описание: Поводок со светоотражающими элементами помогает сделать прогулки безопасными в
+                            темное время суток.</span>
+                        <span>Оценка: ★★★★★</span>
+                    </div>
+                </div>
+                <div class="list-item frame"> <img src="../img/accessories/4.png" alt="">
+                    <div class="a-desc">
+                        <h2>Щетка-фурминатор</h2>
+                        <span>Описание: Фурминатор эффективно удаляет подшёрсток без повреждения остевого волоса, что
+                            особенно полезно при линьке.</span>
+                        <span>Оценка: ★★★★★</span>
+                    </div>
+                </div>
+                <div class="list-item frame"> <img src="../img/placeholder.jpg" alt="">
+                    <div class="a-desc">
+                        <h2>Набор для груминга</h2>
+                        <span>Описание: Комплект инструментов для ухода за шерстью, когтями и ушами собаки, включающий ножницы, щётку, триммеры и другие аксессуары.</span>
+                        <span>Оценка: ★★★★★</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" style="margin-top: 10px;">
+                <button class="button" style="visibility: hidden;" onclick="location.href=''"><- Пред. страница</button>
+                        <span class="pages">1/10</span>
+                        <button class="button" onclick="location.href=''">След. страница -></button>
+            </div>
+        </div>
 
     </main>
     <footer class="footer">

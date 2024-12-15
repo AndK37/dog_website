@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>AAAAAAAAAAAAAAAAAAAAAAAAA</title>
+    <link rel="stylesheet" href="../css/dog-page.css">
+    <title>Немецкая овчарка</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 </head>
 
@@ -21,13 +22,13 @@
         <nav class="header__nav">
             <button class="header__button" onclick="location.href='../index.html'">Главная</button>
             <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
-            <button class="header__button" onclick="location.href='forum.html'">Форум</button>
-            <button class="header__button" onclick="location.href='dogs.html'">Породы собак</button>
-            <button class="header__button" onclick="location.href='accessories.html'">Аксессуары для собак</button>
+            <button class="header__button">Форум</button>
+            <button class="header__button">Породы собак</button>
+            <button class="header__button">Аксессуары для собак</button>
         </nav>
         <div class="header__auth">
             <a id="reg-link" class="header__link">Регистрация</a>
-            <input id="login-btn" class="button" type="button" value="Войти">
+            <input id="login-btn" class="header__button" type="button" value="Войти">
         </div>
         <div class="ham">
             <img id="m" src="../img/ham.png" alt="" height="30px" onclick="side()">
@@ -37,15 +38,15 @@
                 <img id="c" src="../img/cross.png" alt="" height="30px" onclick="side()">
             </div>
             <nav class="side__nav">
-                <button class="header__button" onclick="location.href='../index.html'">Главная</button>
+                <button class="header__button">Главная</button>
                 <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
-                <button class="header__button" onclick="location.href='forum.html'">Форум</button>
+                <button class="header__button">Форум</button>
                 <button class="header__button" onclick="location.href='dogs.html'">Породы собак</button>
-                <button class="header__button" onclick="location.href='accessories.html'">Аксессуары для собак</button>
+                <button class="header__button">Аксессуары для собак</button>
             </nav>
             <div class="side__auth">
                 <a id="reg-link" class="header__link">Регистрация</a>
-                <input id="side-login-btn" class="button" type="button" value="Войти">
+                <input id="side-login-btn" class="header__button" type="button" value="Войти">
             </div>
         </div>
     </header>
@@ -59,7 +60,7 @@
             <input type="text">
             <h2>Пароль</h2>
             <input type="password" name="" id="">
-            <button class="articles__button" style="margin-top: 10px;">Зарегистрироваться</button>
+            <button class="button" style="margin-top: 10px;">Зарегистрироваться</button>
         </form>
     </dialog>
     <dialog id="d-log" class="modal frame">
@@ -70,11 +71,33 @@
             <input type="text">
             <h2>Пароль</h2>
             <input type="password" name="" id="">
-            <button class="articles__button" style="margin-top: 10px;">Войти</button>
+            <button class="button" style="margin-top: 10px;">Войти</button>
         </form>
     </dialog>
     <main>
-
+        <div class="frame center">
+            <div class="top">
+                <img src="../img/dogs/page.jpg" alt="">
+                <div class="spec">
+                    <span class="frame">Название породы: Немецкая овчарка</span>
+                    <span class="frame">Страна происхождения: Германия</span>
+                    <span class="frame">Время зарождения породы: конец XIX века</span>
+                    <span class="frame">Продолжительность жизни: 10-13 лет</span>
+                    <span class="frame">Рост (высота в холке): кобели 60-65 см, суки 55-60 см</span>
+                    <span class="frame">Вес: кобели 30-40 кг, суки 22-32 кг</span>
+                    <span class="frame">Шерсть: короткая или средняя</span>
+                    
+                </div>
+            </div>
+            <div>
+                <h1>Описание</h1>
+                <p>Овчарка — это порода собак, которая отличается своей универсальностью и отличными рабочими
+                    качествами. Она была выведена в Германии и использовалась для охраны стада и выполнения различных
+                    задач. Овчарки известны своим умом, верностью и способностью адаптироваться к различным условиям.
+                    Они обладают крепким телосложением, густой шерстью и различными окрасами. Овчарки хорошо ладят с
+                    детьми и другими животными, однако нуждаются в ранней социализации и обучении.</p>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__left">

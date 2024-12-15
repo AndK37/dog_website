@@ -28,6 +28,15 @@
     background-image: url("../img/dogs/1.jpg");
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 97%;
+    
+}
+
+
+
 
 #d1 {
     background-image: url("../img/dogs/1.jpg");

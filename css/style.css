@@ -80,6 +80,60 @@ main {
     margin: 10px;
 }
 
+.modal {
+    width: 300px;
+    height: fit-content;
+    z-index: 10;
+    background-color: #FBFBFB;
+}
+.modal .articles__button {
+    margin-top: 10px;
+}
+
+.modal input {
+    border-radius: 50px;
+    border: black solid 2px;
+    font-size: 1.5rem;
+    width: 95%;
+}
+.modal__close {
+    background-color: #FBFBFB;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 270px;
+    cursor: pointer;
+
+}
+
+.button {
+    background-color: #FBFBFB;
+    color: #202020;
+    border: 2px #202020 solid;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 5px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 8px;
+}
+.button:hover {
+    background-color: #202020;
+    color: #FBFBFB;
+}
+.pages {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
 @media (max-width: 1200px) {
     .header__nav {
         display: none;

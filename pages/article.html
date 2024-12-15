@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/article.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/main.js"></script>
+
     <title>Список статей</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 </head>
@@ -23,13 +23,13 @@
         <nav class="header__nav">
             <button class="header__button" onclick="location.href='../index.html'">Главная</button>
             <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
-            <button class="header__button">Форум</button>
+            <button class="header__button" onclick="location.href='forum.html'">Форум</button>
             <button class="header__button" onclick="location.href='dogs.html'">Породы собак</button>
-            <button class="header__button">Аксессуары для собак</button>
+            <button class="header__button" onclick="location.href='accessories.html'">Аксессуары для собак</button>
         </nav>
         <div class="header__auth">
-            <a class="header__link" href="">Регистрация</a>
-            <input class="header__button" type="button" value="Войти">
+            <a id="reg-link" class="header__link">Регистрация</a>
+            <input id="login-btn" class="button" type="button" value="Войти">
         </div>
         <div class="ham">
             <img id="m" src="../img/ham.png" alt="" height="30px" onclick="side()">
@@ -39,18 +39,42 @@
                 <img id="c" src="../img/cross.png" alt="" height="30px" onclick="side()">
             </div>
             <nav class="side__nav">
-                <button class="header__button">Главная</button>
+                <button class="header__button" onclick="location.href='../index.html'">Главная</button>
                 <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
-                <button class="header__button">Форум</button>
-                <button class="header__button">Породы собак</button>
-                <button class="header__button">Аксессуары для собак</button>
+                <button class="header__button" onclick="location.href='forum.html'">Форум</button>
+                <button class="header__button" onclick="location.href='dogs.html'">Породы собак</button>
+                <button class="header__button" onclick="location.href='accessories.html'">Аксессуары для собак</button>
             </nav>
             <div class="side__auth">
-                <a class="header__link" href="">Регистрация</a>
-                <input class="header__button" type="button" value="Войти">
+                <a id="reg-link" class="header__link">Регистрация</a>
+                <input id="side-login-btn" class="button" type="button" value="Войти">
             </div>
         </div>
     </header>
+    <dialog id="d-reg" class="modal frame">
+        <form method="dialog">
+            <button id="modal-close" class="modal__close">X</button>
+            <h1>Регистрация</h1>
+            <h2>Почта</h2>
+            <input type="email" name="" id="">
+            <h2>Логин</h2>
+            <input type="text">
+            <h2>Пароль</h2>
+            <input type="password" name="" id="">
+            <button class="button" style="margin-top: 10px;">Зарегистрироваться</button>
+        </form>
+    </dialog>
+    <dialog id="d-log" class="modal frame">
+        <form method="dialog">
+            <button id="modal-close" class="modal__close">X</button>
+            <h1>Вход</h1>
+            <h2>Логин</h2>
+            <input type="text">
+            <h2>Пароль</h2>
+            <input type="password" name="" id="">
+            <button class="button" style="margin-top: 10px;">Войти</button>
+        </form>
+    </dialog>
     <main>
         <div class="article-head frame center">
             <img class="article-head__avatar" src="../img/placeholder.jpg" alt="">
@@ -207,6 +231,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

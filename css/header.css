@@ -15,6 +15,7 @@
 .header__link {
     color: #FBFBFB;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header__title {
