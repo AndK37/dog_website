@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мир собак - сайт о собаках">
+    <meta name="keywords" content="Мир собак, собаки, собака, новости, статьи, форум, порода, животные">
+    <meta name="author" content="andk">
+    <meta name="generator" content="VSCode">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/main-articles.css">
+    <title>Форум</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+</head>
+
+<body>
+    <header id="h" class="header header_a">
+        <h1 class="header__title">Мир собак</h1>
+        <nav class="header__nav">
+            <button class="header__button" onclick="location.href='../index.html'">Главная</button>
+            <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
+            <button class="header__button" onclick="location.href='forum.html'">Форум</button>
+            <button class="header__button" onclick="location.href='dogs.html'">Породы собак</button>
+            <button class="header__button" onclick="location.href='accessories.html'">Аксессуары для собак</button>
+        </nav>
+        <div class="header__auth">
+            <a id="reg-link" class="header__link">Регистрация</a>
+            <input id="login-btn" class="button" type="button" value="Войти">
+        </div>
+        <div class="ham">
+            <img id="m" src="../img/ham.png" alt="" height="30px" onclick="side()">
+        </div>
+        <div id="side" class="side">
+            <div class="ham-c">
+                <img id="c" src="../img/cross.png" alt="" height="30px" onclick="side()">
+            </div>
+            <nav class="side__nav">
+                <button class="header__button" onclick="location.href='../index.html'">Главная</button>
+                <button class="header__button" onclick="location.href='articles-list.html'">Статьи</button>
+                <button class="header__button" onclick="location.href='forum.html'">Форум</button>
+                <button class="header__button" onclick="location.href='dogs.html'">Породы собак</button>
+                <button class="header__button" onclick="location.href='accessories.html'">Аксессуары для собак</button>
+            </nav>
+            <div class="side__auth">
+                <a id="reg-link" class="header__link">Регистрация</a>
+                <input id="side-login-btn" class="button" type="button" value="Войти">
+            </div>
+        </div>
+    </header>
+    <dialog id="d-reg" class="modal frame">
+        <form method="dialog">
+            <button id="modal-close" class="modal__close">X</button>
+            <h1>Регистрация</h1>
+            <h2>Почта</h2>
+            <input type="email" name="" id="">
+            <h2>Логин</h2>
+            <input type="text">
+            <h2>Пароль</h2>
+            <input type="password" name="" id="">
+            <button class="articles__button" style="margin-top: 10px;">Зарегистрироваться</button>
+        </form>
+    </dialog>
+    <dialog id="d-log" class="modal frame">
+        <form method="dialog">
+            <button id="modal-close" class="modal__close">X</button>
+            <h1>Вход</h1>
+            <h2>Логин</h2>
+            <input type="text">
+            <h2>Пароль</h2>
+            <input type="password" name="" id="">
+            <button class="articles__button" style="margin-top: 10px;">Войти</button>
+        </form>
+    </dialog>
+    <main>
+        <div class="center" style="display: flex; flex-direction: column; gap: 20px;">
+            <div class="articles__item frame">
+                <div class="articles__item-top">
+                    <img class="articles__avatar" src="../img/placeholder.jpg" alt="">
+                    <a class="articles__user-link" href="">Cyber_Nomad</a>
+                    <span class="articles__date">01.01.24</span>
+                </div>
+                <div class="articles__item-center">
+                    <h2 class="articles__title">Как выбрать щенка?</h2>
+                </div>
+                <div class="articles__item-bot" style="justify-content: space-between; align-items: center;">
+                    <div class="rating">
+                        <img class="rating__upvote rating__image_small" src="../img/arrow.png" alt="">
+                        <span class="rating__score_small">0</span>
+                        <img class="rating__downvote rating__image_small" src="../img/arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments frame center">
+            <h1>Комментарии</h1>
+            <div class="comments__form">
+                <div style="display: flex;">
+                    <textarea class="comments__input" name="" id=""></textarea>
+                </div>
+                <div style="align-self: flex-end;">
+                    <button class="comments__button">Отправить</button>
+                </div>
+                <div class="comment">
+                    <div class="comment__top">
+                        <img class="comment__avatar" src="../img/placeholder.jpg" alt="">
+                        <a class="comment__user-link" href="">Cyber_Nomad</a>
+                        <span class="comment__date">9:00 01.01</span>
+                    </div>
+                    <div class="comment__mid">
+                        <span class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aspernatur quidem natus
+                            eaque a dolorem cum obcaecati, voluptatibus modi eos, perspiciatis beatae deserunt
+                            repellendus ut porro ducimus placeat blanditiis sint?</span>
+                    </div>
+                    <div class="comment__bot">
+                        <div class="rating">
+                            <img class="rating__upvote rating__image_small" src="../img/arrow.png" alt="">
+                            <span class="rating__score_small">0</span>
+                            <img class="rating__downvote rating__image_small" src="../img/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment sub-comment">
+                    <div class="comment__top">
+                        <img class="comment__avatar" src="../img/placeholder.jpg" alt="">
+                        <a class="comment__user-link" href="">Cyber_Nomad</a>
+                        <span class="comment__date">9:00 01.01</span>
+                    </div>
+                    <div class="comment__mid">
+                        <span class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aspernatur quidem natus
+                            eaque a dolorem cum obcaecati, voluptatibus modi eos, perspiciatis beatae deserunt
+                            repellendus ut porro ducimus placeat blanditiis sint?</span>
+                    </div>
+                    <div class="comment__bot">
+                        <div class="rating">
+                            <img class="rating__upvote rating__image_small" src="../img/arrow.png" alt="">
+                            <span class="rating__score_small">0</span>
+                            <img class="rating__downvote rating__image_small" src="../img/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment sub-comment">
+                    <div class="comment__top">
+                        <img class="comment__avatar" src="../img/placeholder.jpg" alt="">
+                        <a class="comment__user-link" href="">Cyber_Nomad</a>
+                        <span class="comment__date">9:00 01.01</span>
+                    </div>
+                    <div class="comment__mid">
+                        <span class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aspernatur quidem natus
+                            eaque a dolorem cum obcaecati, voluptatibus modi eos, perspiciatis beatae deserunt
+                            repellendus ut porro ducimus placeat blanditiis sint?</span>
+                    </div>
+                    <div class="comment__bot">
+                        <div class="rating">
+                            <img class="rating__upvote rating__image_small" src="../img/arrow.png" alt="">
+                            <span class="rating__score_small">0</span>
+                            <img class="rating__downvote rating__image_small" src="../img/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment__top">
+                        <img class="comment__avatar" src="../img/placeholder.jpg" alt="">
+                        <a class="comment__user-link" href="">Cyber_Nomad</a>
+                        <span class="comment__date">9:00 01.01</span>
+                    </div>
+                    <div class="comment__mid">
+                        <span class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aspernatur quidem natus
+                            eaque a dolorem cum obcaecati, voluptatibus modi eos, perspiciatis beatae deserunt
+                            repellendus ut porro ducimus placeat blanditiis sint?</span>
+                    </div>
+                    <div class="comment__bot">
+                        <div class="rating">
+                            <img class="rating__upvote rating__image_small" src="../img/arrow.png" alt="">
+                            <span class="rating__score_small">0</span>
+                            <img class="rating__downvote rating__image_small" src="../img/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__left">
+            <span class="footer__title">Контакты</span>
+            <span class="footer__contacts">
+                Телефон: +7 (999) 999-999<br>
+                Почта: email@mail.com
+            </span>
+        </div>
+        <div class="footer__right">
+            <span class="footer__title">Соц. сети</span>
+            <div class="footer__icon-list">
+                <img class="footer__icon" src="../img/socials/yt.png" alt="">
+                <img class="footer__icon" src="../img/socials/whatsapp.png" alt="">
+                <img class="footer__icon" src="../img/socials/vk.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
